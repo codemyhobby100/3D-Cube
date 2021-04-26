@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Slider Using Swiper.js Library</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imageBx">
+                    <img src="Images/img1.jpg" class="small">
+                </div>
+                <div class="texthold">
+                    <h2>Apple Products and Camera <br> <span>COST - $659.99</span></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imageBx">
+                    <img src="Images/img2.jpg" class="small">
+                </div>
+                <div class="texthold">
+                    <h2>Vintage Canon Camera <br> <span>COST - $259.99</span></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imageBx">
+                    <img src="Images/img3.jpg" class="small">
+                </div>
+                <div class="texthold">
+                    <h2>Nice Laptop <br><span>COST - $400</span></h2>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imageBx">
+                    <img src="Images/img4.jpg" class="small">
+                </div>
+                <div class="texthold">
+                    <h2>Canon Camera <br><span>COST - $500</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        })
+    </script>
+</body>
+</html>
